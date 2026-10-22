@@ -1,5 +1,7 @@
 # Best bang for the buck
 
+**[← All projects](https://gernreich.github.io/)**
+
 **[Read the writeup](https://gernreich.github.io/bang-for-the-buck/)**: the
 method explained, with a live demo where you can change how uneven the folder
 sizes are or paste your own `du` output.
