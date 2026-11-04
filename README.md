@@ -42,3 +42,7 @@ cannot read.
 
 `index.html` is the writeup, written by hand and published by GitHub Pages.
 Its demo uses the same cutoff rule as the script.
+
+## Credits
+
+The method is Michael Gernreich's; [Claude](https://www.anthropic.com/claude) (Anthropic), working in Claude Code, co-wrote the code and the documentation that present it. Commits Claude made carry a `Co-Authored-By: Claude` line.
