@@ -102,7 +102,12 @@ def knee(sizes):
         y = 1 - running / total if total else 0.0
         curve.append((x, y, sqrt(x * x + y * y)))
     # On a tie take the later point, so a lone entry is still acted on.
-    best = min(range(len(curve)), key=lambda k: (curve[k][2], -k))
+    # Ties are within 1e-12, so rounding noise cannot break them, and the
+    # page's demo, which computes the distance differently, agrees.
+    best = 0
+    for k in range(1, len(curve)):
+        if curve[k][2] <= curve[best][2] + 1e-12:
+            best = k
     return best, curve
 
 
